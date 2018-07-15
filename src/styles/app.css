@@ -1,6 +1,6 @@
 /* ------------------- General css ------------------------ */
 body {
-	background-color: #fff;
+	background-color: #f1f1f1;
 	padding-top: 56px;
 }
 
@@ -12,15 +12,26 @@ body {
     margin-left:0;
     margin-right:0;
 }
-
+	
 #sidebar-container {
 	min-height: 100vh;
     background-color: #212529;
     padding: 0;
 }
 
-.bg-light-grey {
-	background-color: #f8f9fa;
+.btn-primary {
+	background-color: #cd0001;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #cd0001;
+}
+
+.white-section {
+	background-color: #fff;
+	text-align: justify;
+	border: thin solid #ddd;
 }
 
 .dark-grey-background {
@@ -78,14 +89,14 @@ body {
 	}
 }
 
-@media (max-width:992px) and (min-width:574px) {
-    #contenu {
-		width: calc(100vw - 72px)
-	}
-}​
-
 @media (max-width: 574px) {
 	body {
 		padding-bottom: 65px;
+	}
+}	
+
+@media (max-width: 992px) and (min-width: 574px) {
+	#contenu {
+		width: calc(100vw - 72px);
 	}
 }

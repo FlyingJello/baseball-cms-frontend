@@ -29,6 +29,12 @@
     <div class="row" id="body-row">
       <nav id="sidebar-container" class="sidebar-expanded d-none d-sm-block col-lg-2">
         <ul class="list-group sticky-top sticky-offset">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="fas fa-home mr-3"></span>
+              <span class="d-none d-lg-block">Accueil</span>
+            </div>
+          </a>
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
             <small style="color:white;">PILOTAGE</small>
           </li>
@@ -38,7 +44,7 @@
               <span class="d-none d-lg-block">Gestion des événements</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="far fa-newspaper mr-3"></span>
               <span class="d-none d-lg-block">Gestion des nouvelles</span>
@@ -108,10 +114,9 @@
       </nav>
 
       <div id="contenu" class="col-lg-10 pt-4">
-
+        <router-view/>
       </div>
     </div>
-    <router-view/>
   </div>
 </template>
 
