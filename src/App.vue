@@ -31,7 +31,7 @@
         <ul class="list-group sticky-top sticky-offset">
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-home mr-3"></span>
+              <span class="fas fa-home fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Accueil</span>
             </div>
           </a>
@@ -40,19 +40,19 @@
           </li>
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="far fa-calendar-alt mr-3"></span>
+              <span class="far fa-calendar-alt fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Gestion des événements</span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="far fa-newspaper mr-3"></span>
+              <span class="far fa-newspaper fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Gestion des nouvelles</span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-users mr-3"></span>
+              <span class="fas fa-users fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Gestion des joueurs</span>
             </div>
           </a>
@@ -62,25 +62,25 @@
           </li>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-file-import mr-3"></span>
+              <span class="fas fa-file-import fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Importations et exportations</span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="far fa-chart-bar mr-3"></span>
+              <span class="far fa-chart-bar fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Statistiques</span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-handshake mr-3"></span>
+              <span class="fas fa-handshake fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Commandites</span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-address-card mr-3"></span>
+              <span class="fas fa-address-card fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Contact</span>
             </div>
           </a>
@@ -91,13 +91,13 @@
 
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-users-cog mr-3"></span>
+              <span class="fas fa-users-cog fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Gestion du personnel</span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-history mr-3"></span>
+              <span class="fas fa-history fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Historique des transactions</span>
             </div>
           </a>
@@ -106,14 +106,14 @@
 
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-question-circle mr-3"></span>
+              <span class="fas fa-question-circle fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Aide</span>
             </div>
           </a>
         </ul>
       </nav>
 
-      <div id="contenu" class="col-lg-10 pt-4">
+      <div id="content" class="col-lg-10 pt-4">
         <router-view/>
       </div>
     </div>
