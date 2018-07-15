@@ -1,0 +1,91 @@
+/* ------------------- General css ------------------------ */
+body {
+	background-color: #fff;
+	padding-top: 56px;
+}
+
+.sticky-offset {
+    top: 56px;
+}
+
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+
+#sidebar-container {
+	min-height: 100vh;
+    background-color: #212529;
+    padding: 0;
+}
+
+.bg-light-grey {
+	background-color: #f8f9fa;
+}
+
+.dark-grey-background {
+	background-color: #212529;
+}
+
+.bg-red {
+	background-color: #cd0001;
+}
+
+.list-group-item {
+	background-color: inherit;
+	color: #aaa !important;
+}
+
+.list-group-item:hover {
+	background-color: inherit;
+	color: #ccc !important;
+}
+
+.list-group-item.active {
+	border-color: rgba(0,0,0,.125);
+	border-right: 4px solid #cd0001 !important;
+	color: white !important;
+	background-color: inherit;
+}
+
+.list-group-item-xs {
+	color: #aaa !important;
+	border: 1px solid rgba(0,0,0,.125);
+	cursor: pointer;
+}
+
+.list-group-item-xs:hover {
+	background-color: inherit;
+	color: #ccc !important;
+}
+
+.list-group-item-xs.active {
+	border-color: rgba(0,0,0,.125);
+	border-top: 4px solid #cd0001 !important;
+	background-color: inherit;
+	color: white !important;
+}
+
+
+/* Medium devices (desktops, 992px and down) */
+@media (max-width: 992px) { 
+	#sidebar-container {
+		width: 60px;
+	}
+	
+	.sidebar-separator, .sidebar-separator-title {
+		display: none !important;
+	}
+}
+
+@media (max-width:992px) and (min-width:574px) {
+    #contenu {
+		width: calc(100vw - 72px)
+	}
+}​
+
+@media (max-width: 574px) {
+	body {
+		padding-bottom: 65px;
+	}
+}
