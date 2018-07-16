@@ -7,10 +7,6 @@ body {
     top: 56px;
 }
 
-#content {
-	margin-top: 56px;
-}
-
 #body-row {
     margin-left:0;
     margin-right:0;
@@ -32,8 +28,11 @@ body {
 }
 
 .white-section {
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
 	background-color: #fff;
-	border: thin solid #ddd;
 }
 
 .dark-grey-background {
@@ -54,11 +53,30 @@ body {
 	color: #ccc !important;
 }
 
+.list-group-item:first-child {
+	border-top-left-radius: 0rem;
+	border-top-right-radius: 0rem;
+}
+
 .list-group-item.active {
 	border-color: rgba(0,0,0,.125);
-	border-right: 4px solid #cd0001 !important;
 	color: white !important;
-	background-color: inherit;
+	background-color: #cd0001;
+}
+
+.list-group-item.active:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(205, 0, 1, 0);
+	border-left-color: #cd0001;
+	border-width: 8px;
+	margin-top: -8px;
 }
 
 .list-group-item-xs {
@@ -74,11 +92,9 @@ body {
 
 .list-group-item-xs.active {
 	border-color: rgba(0,0,0,.125);
-	border-top: 4px solid #cd0001 !important;
-	background-color: inherit;
+	background-color: #cd0001;
 	color: white !important;
 }
-
 
 /* Medium devices (desktops, 992px and down) */
 @media (max-width: 992px) { 
@@ -93,12 +109,17 @@ body {
 
 @media (max-width: 574px) {
 	body {
-		padding-bottom: 65px;
+		padding-bottom: 56px;
+		margin-top: 56px;
 	}
 }	
 
 @media (max-width: 992px) and (min-width: 574px) {
 	#content {
 		width: calc(100vw - 72px);
+	}
+
+	.list-group-item {
+		padding : 1.1rem 1.25rem;
 	}
 }

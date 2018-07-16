@@ -1,9 +1,14 @@
 <template>
   <div id="app">
+    <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top d-xs-block d-sm-none">
+      <a class="navbar-brand" href="#">
+        <span>Baseball mineur La Pocatière</span>
+      </a>    
+    </nav>
     <nav class="fixed-bottom navbar-expand dark-grey-background d-xs-block d-sm-none">
       <div class="row" style="margin-left: 0px; margin-right: 0px;">
         <a class="col text-center py-3 list-group-item-xs active">
-          <span class="fas fa-home fa-fw"></span>
+          <span class="fas fa-tachometer-alt fa-fw"></span>
         </a>
         <a class="col text-center py-3 list-group-item-xs">
           <span class="fab fa-whmcs fa-fw"></span>
@@ -20,19 +25,27 @@
       </div>
     </nav>
 
-    <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">
-        <span> Baseball mineur La Pocatière </span>
-      </a>    
-    </nav>
-
     <div class="row" id="body-row">
       <nav id="sidebar-container" class="sidebar-expanded d-none d-sm-block col-lg-2">
-        <ul class="list-group sticky-top sticky-offset">
+        <div class="text-center py-3 d-none d-lg-block">
+          <div class="py-1">
+            <span style="color:#aaa;" class="fas fa-user-circle fa-5x"></span>
+          </div>
+          <div class="pt-1">
+            <span style="color:white;">Jean-Philippe Lévesque</span>
+          </div>
+          <div>
+            <span style="color:#aaa;">Administrateur</span>
+          </div>
+        </div>
+        <ul class="list-group sticky-top">
+          <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
+            <small style="color:white;">GÉNÉRAL</small>
+          </li>
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-home fa-fw mr-3"></span>
-              <span class="d-none d-lg-block">Accueil</span>
+              <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+              <span class="d-none d-lg-block">Tableau de bord</span>
             </div>
           </a>
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
@@ -99,15 +112,6 @@
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="fas fa-history fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Historique des transactions</span>
-            </div>
-          </a>
-
-          <li class="list-group-item sidebar-separator"></li>
-
-          <a href="#" class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-question-circle fa-fw mr-3"></span>
-              <span class="d-none d-lg-block">Aide</span>
             </div>
           </a>
         </ul>
