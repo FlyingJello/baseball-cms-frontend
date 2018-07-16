@@ -2,11 +2,11 @@
   <div id="app">
     <nav class="fixed-bottom navbar-expand dark-grey-background d-xs-block d-sm-none">
       <div class="row" style="margin-left: 0px; margin-right: 0px;">
-        <a class="col text-center py-3 list-group-item-xs">
-          <span class="fas fa-user-cog"></span>
-        </a>
         <a class="col text-center py-3 list-group-item-xs active">
-          <span class="fab fa-whmcs"></span>
+          <span class="fas fa-home fa-fw"></span>
+        </a>
+        <a class="col text-center py-3 list-group-item-xs">
+          <span class="fab fa-whmcs fa-fw"></span>
         </a>
         <a class="col text-center py-3 list-group-item-xs">
           <span class="fas fa-users"></span>
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top">
       <a class="navbar-brand" href="#">
         <span> Baseball mineur La Pocatière </span>
-      </a>
+      </a>    
     </nav>
 
     <div class="row" id="body-row">
