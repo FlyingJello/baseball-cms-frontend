@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top d-xs-block d-sm-none">
       <a class="navbar-brand" href="#">
         <span>Baseball mineur La Pocatière</span>
-      </a>    
+      </a>
     </nav>
     <nav class="fixed-bottom navbar-expand dark-grey-background d-xs-block d-sm-none">
       <div class="row" style="margin-left: 0px; margin-right: 0px;">
@@ -42,14 +42,14 @@
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
             <small style="color:white;">GÉNÉRAL</small>
           </li>
-          
+
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
               <span class="d-none d-lg-block">Tableau de bord</span>
             </div>
           </a>
-          
+
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
             <small style="color:white;">PILOTAGE</small>
           </li>
@@ -126,7 +126,6 @@
           </a>
         </ul>
       </nav>
-
       <div id="content" class="col-lg-10 pt-3">
         <router-view/>
       </div>
@@ -136,8 +135,8 @@
 
 <script>
 export default {
-  name: "App"
-};
+  name: 'App'
+}
 </script>
 
 <style>
