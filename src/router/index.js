@@ -2,26 +2,39 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
-import CmsHome from '@/components/CmsHome'
+import Cms from '@/components/Cms'
+import Dashboard from '@/components/Dashboard'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/cms/login',
+      path: '/login',
       name: 'Login',
       component: Login
     },
     {
-      path: '/cms/home',
-      name: 'CmsHome',
-      component: CmsHome
+      path: '/cms',
+      name: 'Cms',
+      component: Cms,
+      children: [
+        { path: '',
+          name: '',
+          component: Dashboard
+        },
+        {
+          path: 'home',
+          name: 'Dashboard',
+          component: Dashboard
+        }
+      ]
+    },
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
     }
   ]
 })
