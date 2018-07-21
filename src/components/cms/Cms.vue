@@ -46,7 +46,7 @@
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
-              <span class="d-none d-lg-block">Tableau de bord</span>
+              <span class="d-none d-lg-block"><router-link to="home">Tableau de bord</router-link></span>
             </div>
           </a>
 
@@ -57,7 +57,7 @@
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="far fa-calendar-alt fa-fw mr-3"></span>
-              <span class="d-none d-lg-block">Gestion des événements</span>
+              <span class="d-none d-lg-block"> <router-link to="events">Gestion des événements</router-link></span>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -140,5 +140,5 @@ export default {
 </script>
 
 <style>
-@import "../styles/app.css";
+@import "../../styles/app.css";
 </style>

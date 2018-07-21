@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Login from '@/components/Login'
-import Cms from '@/components/Cms'
-import Dashboard from '@/components/Dashboard'
+import Login from '@/components/cms/Login'
+import Cms from '@/components/cms/Cms'
+import Dashboard from '@/components/cms/Dashboard'
+import Events from '@/components/cms/Events'
 
 Vue.use(Router)
 
@@ -21,13 +22,17 @@ export default new Router({
       component: Cms,
       children: [
         { path: '',
-          name: '',
-          component: Dashboard
+          redirect: 'home'
         },
         {
           path: 'home',
           name: 'Dashboard',
           component: Dashboard
+        },
+        {
+          path: 'events',
+          name: 'Events',
+          component: Events
         }
       ]
     },
