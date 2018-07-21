@@ -17,12 +17,7 @@
 </template>
 
 <script>
-import axios from 'axios'
-
-let instance = axios.create({
-  baseURL: 'http://localhost:5977',
-  timeout: 1000
-})
+import Vue from 'vue'
 
 export default {
   name: 'Login',
@@ -31,7 +26,7 @@ export default {
   },
   methods: {
     getUsers: () => {
-      instance
+      new Vue().$http
         .get('/user')
         .then(response => {
           console.log(response)
