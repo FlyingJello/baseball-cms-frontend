@@ -43,23 +43,30 @@
             <small style="color:white;">GÉNÉRAL</small>
           </li>
 
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
-              <span class="d-none d-lg-block"><router-link to="home">Tableau de bord</router-link></span>
-            </div>
-          </a>
+          <router-link to="home">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-start align-items-center">
+                <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                <span class="d-none d-lg-block">Tableau de bord</span>
+              </div>
+            </a>
+          </router-link>
 
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
             <small style="color:white;">PILOTAGE</small>
           </li>
 
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="far fa-calendar-alt fa-fw mr-3"></span>
-              <span class="d-none d-lg-block"> <router-link to="events">Gestion des événements</router-link></span>
-            </div>
-          </a>
+          <router-link to="events">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-start align-items-center">
+                <span class="far fa-calendar-alt fa-fw mr-3"></span>
+                <span class="d-none d-lg-block">
+                  Gestion des événements
+                </span>
+              </div>
+            </a>
+          </router-link>
+
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="far fa-newspaper fa-fw mr-3"></span>
