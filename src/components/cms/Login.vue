@@ -1,41 +1,52 @@
 <template>
-  <div>
-    <form action="/">
-      <div class="form-group">
-        <label for="user">Nom d'utilisateur :</label>
-        <input type="user" class="form-control" id="user">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Mot de passe:</label>
-        <input type="password" class="form-control" id="pwd">
-      </div>
-      <router-link to="/cms/home" class="btn btn-primary" tag="button">Connexion
-        <i class="fas fa-sign-in-alt"></i>
-      </router-link>
-    </form>
-  </div>
+  <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 offset-sm-3 offset-md-4">
+                <div class="login-box">
+                    <div id="error" class="login-logo">
+                    
+                    </div>
+                    <hr>
+                    <div class="login-form">
+                        <form action="/">
+                            <div class="form-group">
+                                <input type="user" v-model="username" placeholder="Nom d'utilisateur" class="form-control" id="user">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" v-model="password" placeholder="Mot de passe" class="form-control" id="pwd">
+                            </div>
+                            <input id="clickMe" type="button" value="clickmyD" v-on:click="userAuthentication" />
+                        </form>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
 </template>
 
 <script>
-import Vue from 'vue'
+import Vue from "vue";
+import router from "../../router";
 
 export default {
-  name: 'Login',
-  data: function () {
-    return {}
+  name: "Login",
+  data: function() {
+    return {username: '', password: ''};
   },
   methods: {
-    getUsers: () => {
+    userAuthentication: function() {
       new Vue().$http
-        .get('/user')
-        .then(response => {
-          console.log(response)
+        .post("/user/authenticate", {
+          username: this.username,
+          password: this.password
         })
-        .catch(console.error)
+        .then(function(response) {
+          router.push("/cms/home");
+        })
+        .catch(function(error) {
+          document.getElementById('error').innerHTML = error;
+        });
     }
-  },
-  mounted () {
-    this.getUsers()
   }
-}
+};
 </script>

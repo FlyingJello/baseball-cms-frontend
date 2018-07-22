@@ -98,10 +98,6 @@ nav a.router-link-active {
 
 /* Medium devices (desktops, 992px and down) */
 @media (max-width: 992px) {
-	#sidebar-container {
-		width: 60px;
-	}
-
 	.sidebar-separator, .sidebar-separator-title {
 		display: none !important;
 	}
@@ -114,12 +110,42 @@ nav a.router-link-active {
 	}
 }
 
-@media (max-width: 992px) and (min-width: 574px) {
+@media (min-width: 574px) and (max-width: 992px) {
+	#sidebar-container {
+		width: 60px;
+	}
+	
 	#content {
-		width: calc(100vw - 72px);
+		width: calc(100vw - 60px);
 	}
 
 	.list-group-item {
 		padding : 1.1rem 1.25rem;
 	}
 }
+
+/* ----------------- LOGIN -------------------- */
+.login-box {                                      
+	position: relative;                        
+	max-width: 480px;                          
+	background-color: #222D3A;                 
+	border-radius: 3px;                        
+	padding-bottom: 20px;                      
+	margin-top: 80px;                          
+}                                                 
+											   
+.login-logo {                                     
+	text-align: center;                        
+	padding: 15px 0 10px;                      
+}                                                 
+											   
+.login-form input {                               
+	display: block;                            
+	margin: 0 auto 15px;                       
+	width: 70%;                                
+	background-color: #fefefe;                 
+	border: 0;                                 
+	color: #6c6c6c;                            
+	padding: 8px;                              
+	border-radius: 2px;                        
+}                                                 
