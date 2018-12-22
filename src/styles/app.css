@@ -19,12 +19,12 @@ body {
 }
 
 .btn-primary {
-	background-color: #cd0001;
+	background-color: #1fa67b;
 	border: none;
 }
 
 .btn-primary:hover {
-	background-color: #cd0001;
+	background-color: #1fa67b;
 }
 
 .white-section {
@@ -40,7 +40,7 @@ body {
 }
 
 .bg-red {
-	background-color: #cd0001;
+	background-color: #1fa67b;
 }
 
 .list-group-item {
@@ -61,7 +61,7 @@ body {
 .list-group-item.active {
 	border-color: rgba(0,0,0,.125);
 	color: white !important;
-	background-color: #cd0001;
+	background-color: #1fa67b;
 }
 
 .list-group-item.active:after {
@@ -74,7 +74,7 @@ body {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(205, 0, 1, 0);
-	border-left-color: #cd0001;
+	border-left-color: #1fa67b;
 	border-width: 8px;
 	margin-top: -8px;
 }
@@ -92,7 +92,7 @@ body {
 
 nav a.router-link-active {
 	border-color: rgba(0,0,0,.125);
-	background-color: #cd0001;
+	background-color: #1fa67b;
 	color: white !important;
 }
 
@@ -112,40 +112,24 @@ nav a.router-link-active {
 
 @media (min-width: 574px) and (max-width: 992px) {
 	#sidebar-container {
-		width: 60px;
+		width: 60px !important;
 	}
 	
 	#content {
-		width: calc(100vw - 60px);
+		width: calc(100% - 60px);
 	}
 
 	.list-group-item {
 		padding : 1.1rem 1.25rem;
 	}
-}
+} 
 
-/* ----------------- LOGIN -------------------- */
-.login-box {                                      
-	position: relative;                        
-	max-width: 480px;                          
-	background-color: #222D3A;                 
-	border-radius: 3px;                        
-	padding-bottom: 20px;                      
-	margin-top: 80px;                          
-}                                                 
-											   
-.login-logo {                                     
-	text-align: center;                        
-	padding: 15px 0 10px;                      
-}                                                 
-											   
-.login-form input {                               
-	display: block;                            
-	margin: 0 auto 15px;                       
-	width: 70%;                                
-	background-color: #fefefe;                 
-	border: 0;                                 
-	color: #6c6c6c;                            
-	padding: 8px;                              
-	border-radius: 2px;                        
-}                                                 
+/* LOGIN */
+#login .form-wrap {
+	width : 40%;
+	background-color: white;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+}
