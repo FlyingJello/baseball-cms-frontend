@@ -41,7 +41,7 @@ export default {
           username: this.username,
           password: this.password
         })
-        .then(function  (response) {
+        .then(function (response) {
           router.push('/cms/home')
         })
         .catch(function (error) {
