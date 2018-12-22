@@ -1,6 +1,6 @@
 <template>
     <!--MDB Forms-->
-    <div class="mt-5">
+    <div>
         <section id="login">
             <div class="container">
                 <div class="row">
