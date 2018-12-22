@@ -8,6 +8,8 @@
                             <div class="text-center py-4">
                                 <span style="color:#aaa;" class="fas fa-user-circle fa-7x"></span>
                             </div>
+                            <div id="error" class="d-none alert alert-danger" role="alert">
+                            </div>
                             <div class="form-group">
                                 <label for="user" class="sr-only">Nom d'utilisateur</label>
                                 <input id="user" type="user" v-model="username" placeholder="Nom d'utilisateur" class="form-control">
@@ -46,6 +48,7 @@ export default {
         })
         .catch(function (error) {
           document.getElementById('error').innerHTML = error
+          document.getElementById('error').removeAttribute("d-none")
         })
     }
   }
