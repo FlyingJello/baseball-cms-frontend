@@ -1,5 +1,4 @@
 <template>
-    <!--MDB Forms-->
     <div>
         <section id="login">
             <div class="container">
@@ -24,36 +23,35 @@
             </div>
         </section>
     </div>
-    
 </template>
 
 <script>
-import Vue from "vue";
-import router from "../../router";
+import Vue from 'vue'
+import router from '../../router'
 
 export default {
-  name: "Login",
-  data: function() {
-    return {username: '', password: ''};
+  name: 'Login',
+  data: function () {
+    return {username: '', password: ''}
   },
   methods: {
-    userAuthentication: function() {
+    userAuthentication: function () {
       new Vue().$http
-        .post("/user/authenticate", {
+        .post('/user/authenticate', {
           username: this.username,
           password: this.password
         })
-        .then(function(response) {
-          router.push("/cms/home");
+        .then(function  (response) {
+          router.push('/cms/home')
         })
-        .catch(function(error) {
-          document.getElementById('error').innerHTML = error;
-        });
+        .catch(function (error) {
+          document.getElementById('error').innerHTML = error
+        })
     }
   }
-};
+}
 </script>
 
 <style>
-    @import "../../styles/app.css";
+    @import '../../styles/app.css'
 </style>
