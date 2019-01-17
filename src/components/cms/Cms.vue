@@ -1,46 +1,49 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top d-xs-block d-sm-none">
+    <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top d-xs-block">
       <a class="navbar-brand" href="#">
-        <span>Baseball mineur La Pocatière</span>
+        <span>Baseball mineur de La Pocatière</span>
       </a>
+      <ul class="nav navbar-nav ml-auto">
+        <li class="px-2 py-1"><i style="color:white;" class="fas fa-sign-out-alt fa-lg"></i></li>
+      </ul>
     </nav>
     <nav class="fixed-bottom navbar-expand dark-grey-background d-xs-block d-sm-none">
       <div class="row" style="margin-left: 0px; margin-right: 0px;">
         <a class="col text-center py-3 list-group-item-xs active">
-          <span class="fas fa-tachometer-alt fa-fw"></span>
+          <span class="fas fa-tachometer-alt fa-lg"></span>
         </a>
         <a class="col text-center py-3 list-group-item-xs">
-          <span class="fab fa-whmcs fa-fw"></span>
+          <span class="fab fa-whmcs fa-lg"></span>
         </a>
         <a class="col text-center py-3 list-group-item-xs">
-          <span class="fas fa-users"></span>
+          <span class="fas fa-users fa-lg"></span>
         </a>
         <a class="col text-center py-3 list-group-item-xs">
-          <span class="fas fa-star"></span>
-        </a>
-        <a class="col text-center py-3 list-group-item-xs">
-          <span class="fas fa-question-circle"></span>
+          <span class="fas fa-star fa-lg"></span>
         </a>
       </div>
     </nav>
 
     <div class="row" id="body-row">
       <nav id="sidebar-container" class="sidebar-expanded d-none d-sm-block col-lg-2">
-        <div class="text-center py-3 d-none d-lg-block">
-          <div class="py-1">
-            <span style="color:#aaa;" class="fas fa-user-circle fa-5x"></span>
-          </div>
-          <div class="pt-1">
-            <span style="color:white;">Jean-Philippe Lévesque</span>
-          </div>
-          <div>
-            <span style="color:#aaa;">Administrateur</span>
-          </div>
-        </div>
         <ul class="list-group sticky-top">
+          <li class="d-none d-lg-block">
+            <div class="text-center py-3 d-none d-lg-block">
+              <div class="py-1">
+                <img src="..\..\assets\img_avatar.png" alt="Avatar" style="width:75px; border-radius: 50%;">
+              </div>
+              <div class="pt-1">
+                <span style="color:white;">Jean-Philippe Lévesque</span>
+              </div>
+              <div>
+                <span style="color:#aaa;">Administrateur</span>
+              </div>
+            </div>
+          </li>
+
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
-            <small style="color:white;">GÉNÉRAL</small>
+            <small>GÉNÉRAL</small>
           </li>
 
           <router-link to="home">
