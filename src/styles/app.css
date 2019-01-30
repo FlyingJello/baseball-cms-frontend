@@ -1,23 +1,28 @@
 /* ------------------- General css ------------------------ */
 body {
 	background-color: #eaeaea;
-	font-size: 15px;
-	margin-top: 56px;
+	font-size: 14px;
+	margin-top: 52px;
 }
 
 h1 {
 	color: #33363b;
-	font-size: 25px;
-	padding-bottom: 10px;
+	font-size: 30px;
+	margin-bottom: 0px;
 }
 
-.sticky-offset {
-    top: 56px;
+h2 {
+	font-size: 21px;
 }
 
 #body-row {
     margin-left:0;
     margin-right:0;
+}
+
+#top-container > li:hover {
+	background-color: #266488;
+	cursor: pointer;
 }
 
 #sidebar-container {
@@ -26,26 +31,29 @@ h1 {
     padding: 0;
 }
 
+.sticky-offset, .sticky-top {
+    top: 52px;
+}
+
 .navbar-dark {
-	background-color: #368cbf;
+	background-color: #2b7098;
 }
 
 .btn-primary {
-	background-color: #368cbf;
+	background-color: #2b7098;
 	border: none;
 	font-size: 18px;
 }
 
 .btn-primary:hover {
-	background-color: #368cbf;
+	background-color: #2b7098;
 }
 
 .text-primary-color {
-	color: #368cbf !important;
+	color: #2b7098 !important;
 }
 
 .white-section {
-	border-radius: 8px;
 	-webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
@@ -85,21 +93,17 @@ h1 {
 
 nav a.router-link-active {
 	background-color: #282b2f !important;
-	color: #368cbf !important;
+	color: #2b7098 !important;
 }
 
-.sticky-top {
-	top: 56px;
-}
-
-/* Medium devices (desktops, 992px and down) */
-@media (max-width: 992px) {
+/* Medium devices (desktops, 1140px and down) */
+@media (max-width: 1140px) {
 	.sidebar-separator, .sidebar-separator-title {
 		display: none !important;
 	}
 }
 
-@media (min-width: 574px) and (max-width: 992px) {
+@media (min-width: 574px) and (max-width: 1140px) {
 	#sidebar-container {
 		width: 60px !important;
 	}
@@ -111,19 +115,16 @@ nav a.router-link-active {
 	.list-group-item {
 		padding : 1.1rem 1.25rem;
 	} 
-
-	.sticky-top {
-		top: 56px;
-	}
 } 
 
 @media (max-width: 574px) {
 	body {
-		padding-bottom: 56px;
+		padding-bottom: 30px;
+		margin-top: 52px;
 	}
 
 	.navbar-brand {
-		font-size: 16px;
+		font-size: 17px;
 	}
 }
 
