@@ -79,12 +79,14 @@
               <span class="d-none d-xl-block">Gestion des nouvelles</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-users fa-fw mr-3"></span>
-              <span class="d-none d-xl-block">Gestion des joueurs</span>
-            </div>
-          </a>
+          <router-link to="ManagePlayer">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-start align-items-center">
+                <span class="fas fa-users fa-fw mr-3"></span>
+                <span class="d-none d-xl-block">Gestion des joueurs</span>
+              </div>
+            </a>
+          </router-link>
 
           <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center">
             <small style="color:white;">OPTIONS</small>

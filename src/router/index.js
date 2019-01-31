@@ -5,6 +5,7 @@ import Login from '@/components/cms/Login'
 import Cms from '@/components/cms/Cms'
 import Dashboard from '@/components/cms/Dashboard'
 import Events from '@/components/cms/Events'
+import ManagePlayer from '@/components/cms/ManagePlayer'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
           path: 'events',
           name: 'Events',
           component: Events
+        },
+        {
+          path: 'managePlayer',
+          name: 'ManagePlayer',
+          component: ManagePlayer
         }
       ]
     },
