@@ -46,7 +46,7 @@ export default {
   methods: {
     userAuthentication: function () {
       new Vue().$http
-        .post('/user/authenticate', {
+        .post('api/users/authenticate', {
           username: this.username,
           password: this.password
         })

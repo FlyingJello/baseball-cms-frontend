@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5977',
+  baseURL: 'http://localhost:61924',
   timeout: 1000
 })
 
