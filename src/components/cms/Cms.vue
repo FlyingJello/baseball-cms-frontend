@@ -140,7 +140,7 @@
         </ul>
       </nav>
       <div id="content" class="col-xl-10">
-          <router-view/>       
+          <router-view/>
       </div>
     </div>
   </div>
