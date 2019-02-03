@@ -1,8 +1,7 @@
 /* ------------------- General css ------------------------ */
 body {
 	background-color: #eaeaea;
-	font-size: 14px;
-	margin-top: 52px;
+	margin-top: 56px;
 }
 
 h1 {
@@ -32,7 +31,7 @@ h2 {
 }
 
 .sticky-offset, .sticky-top {
-    top: 52px;
+    top: 56px;
 }
 
 .navbar-dark {
@@ -81,12 +80,11 @@ h2 {
 
 .list-group-item-xs {
 	color: white !important;
-	border: thin solid rgba(0,0,0,.05);
 	cursor: pointer;
 }
 
 .list-group-item-xs:hover {
-	background-color: inherit;
+	background-color: #266488;
 	color: white !important;
 	text-decoration: none !important;
 }
@@ -212,6 +210,7 @@ nav a.router-link-active {
 }
 
 .div-search {
+	padding: 15px 0px 15px 0px;
 	z-index: 1;
 	background-color: #eaeaea;
 }

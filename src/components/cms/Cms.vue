@@ -1,15 +1,12 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top d-xs-block px-0 py-0">
-      <a class="navbar-brand pl-2 pl-sm-3 mx-0 py-2" href="#">
+    <nav class="navbar navbar-expand-md bg-red navbar-dark fixed-top d-none d-sm-block px-0 py-2">
+      <a class="navbar-brand pl-2 pl-sm-3 mx-0" href="#">
         <span>Baseball mineur de La Pocatière</span>
       </a>
-      <ul id="top-container" class="nav navbar-nav ml-auto">
-        <li class="px-4 py-3"><i style="color:white;" class="fas fa-cog fa-lg"></i></li>
-      </ul>
     </nav>
-    <nav class="fixed-bottom navbar-expand dark-grey-background d-xs-block d-sm-none">
-      <div class="row" style="margin-left: 0px; margin-right: 0px;">
+    <nav class="navbar-dark navbar-expand fixed-top d-xs-block d-sm-none" style="border-bottom: 1px solid #282b2f;">
+      <div class="row mx-0">
         <a class="col text-center py-3 list-group-item-xs active">
           <span class="fas fa-th-large fa-lg"></span>
         </a>
@@ -34,7 +31,7 @@
           <li class="d-none d-xl-block">
             <div class="text-center py-4 d-none d-xl-block">
               <div class="py-1">
-                <img src="..\..\assets\img_avatar.png" alt="Avatar" style="width:85px; border-radius: 50%;">
+                <img src="..\..\assets\img_avatar.jpg" alt="Avatar" style="width:85px; border-radius: 50%;">
               </div>
               <div class="pt-1">
                 <span style="color:white; font-size: 16px;">Jean-Philippe Lévesque</span>
