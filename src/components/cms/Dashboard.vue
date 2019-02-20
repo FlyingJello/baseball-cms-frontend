@@ -1,99 +1,127 @@
 <template>
   <div>
     <div class="row mt-3">
-      <div class="col-12 col-lg-6 mb-3 px-0 mb-sm-3 px-sm-3">
-        <div class="col-12 white-section">
-          <div class="py-3">
-            <div class="row px-1 mx-0">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-11 px-0">
-                    <h2>Dernières activités</h2>
-                  </div>
-                  <div class="col-1 px-0 text-right">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </div>
+      <div class="col-12 col-lg-6 col-xl-4 px-0 mb-3 px-sm-3 pr-lg-0">
+        <div class="col-12 tale-section">
+          <div class="row py-3">
+            <div class="col-9 pr-0">
+              <h2 class="py-1">Activitées de la semaine</h2>
+            </div>
+            <div class="col-3 px-0 tale-section-menu text-right">
+                <button class="btn px-2 py-1"><i class="fas fa-sync-alt"></i></button>
+                <button class="btn dropdown-toggle px-3 mr-1" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-12 pt-2">
-                  <p class="mb-0">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+             
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 mb-3 px-0 mb-sm-3 px-sm-3">
-        <div class="col-12 white-section">
-          <div class="py-3">
-            <div class="row px-1 mx-0">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-11 px-0">
-                    <h2>Dernières activités</h2>
-                  </div>
-                  <div class="col-1 px-0 text-right">
-                    <i class="fas fa-ellipsis-v"></i>
-                  </div>
+      <div class="col-12 col-lg-6 col-xl-4 px-0 mb-3 px-sm-3 pr-xl-0">
+        <div class="col-12 tale-section">
+          <div class="row py-3">
+            <div class="col-9 pr-0">
+              <h2></h2>
+            </div>
+            <div class="col-3 px-0 tale-section-menu text-right">
+                <a class="px-2 py-1"><i class="fas fa-sync-alt"></i></a>
+                <button class="btn dropdown-toggle px-3 mr-1" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-12 pt-2">
-                  <p class="mb-0">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-lg-4 mb-3 px-0 mb-sm-3 px-sm-3 pr-lg-1 pl-lg-3">
-        <div class="col-12 white-section">
-          <div class="py-3 mb-0 mx-2">
-            <div class="row px-0 mx-0">
-              <div class="col-12 px-0">
-                <h2>Titre de la section</h2>
-              </div>
-              <div class="col-12 px-0 pt-2">
-                <p class="mb-0">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
-              </div>
+      <div class="col-12 col-lg-6 col-xl-4 px-0 mb-3 px-sm-3 pr-lg-0 pr-xl-3">
+        <div class="col-12 tale-section">
+          <div class="row py-3">
+            <div class="col-9 pr-0">
+              <h2>Activités de la semaine</h2>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-3 px-0 mb-sm-3 px-sm-3 pr-lg-1 pl-lg-3">
-        <div class="col-12 white-section">
-          <div class="py-3 mb-0 mx-2">
-            <div class="row px-0 mx-0">
-              <div class="col-12 px-0">
-                <h2>Titre de la section</h2>
-              </div>
-              <div class="col-12 px-0 pt-2">
-                <p class="mb-0">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-3 px-0 mb-sm-3 px-sm-3 px-lg-3">
-        <div class="col-12 white-section">
-          <div class="py-3 mb-0 mx-2">
-            <div class="row px-0 mx-0">
-              <div class="col-11 px-0">
-                <h2>Dernières activités</h2>
-              </div>
-              <div class="col-1 px-0 text-right">
-                <i class="fas fa-expand"></i>
-              </div>
-            </div>
-            <div class="row px-0 mx-0">
-              <div class="col-12 px-0 pt-2">
-                <div class="row px-0 mx-0">
-                  <p class="mb-0">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+            <div class="col-3 px-0 tale-section-menu text-right">
+                <a class="px-2 py-1"><i class="fas fa-sync-alt"></i></a>
+                <button class="btn dropdown-toggle px-3 mr-1" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
                 </div>
-              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 px-0 mb-3 px-sm-3 pr-xl-0">
+        <div class="col-12 tale-section">
+          <div class="row py-3">
+            <div class="col-9 pr-0">
+              <h2>Activités de la semaine</h2>
+            </div>
+            <div class="col-3 px-0 tale-section-menu text-right">
+                <a class="px-2 py-1"><i class="fas fa-sync-alt"></i></a>
+                <button class="btn dropdown-toggle px-3 mr-1" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 px-0 mb-3 px-sm-3 pr-lg-0 pr-xl-0">
+        <div class="col-12 tale-section">
+          <div class="row py-3">
+            <div class="col-9 pr-0">
+              <h2>Activités de la semaine</h2>
+            </div>
+            <div class="col-3 px-0 tale-section-menu text-right">
+                <a class="px-2 py-1"><i class="fas fa-sync-alt"></i></a>
+                <button class="btn dropdown-toggle px-3 mr-1" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 px-0 mb-3 px-sm-3 pr-xl-3">
+        <div class="col-12 tale-section">
+          <div class="row py-3">
+            <div class="col-9 pr-0">
+              <h2>Activités de la semaine</h2>
+            </div>
+            <div class="col-3 px-0 tale-section-menu text-right">
+                <a class="px-2 py-1"><i class="fas fa-sync-alt"></i></a>
+                <button class="btn dropdown-toggle px-3 mr-1" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
             </div>
           </div>
         </div>
