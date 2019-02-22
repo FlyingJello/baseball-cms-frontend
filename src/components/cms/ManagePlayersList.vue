@@ -6,7 +6,7 @@
       </div>
       <div class="col-2 px-0 text-center my-auto">
         <router-link to="ManagePlayerAddPlayer">
-            <i style="color: #33363b;" class="fas fa-user-plus fa-lg"></i>
+            <i style="color: #676a6c;" class="fas fa-user-plus fa-lg"></i>
         </router-link>
       </div>
     </div>
