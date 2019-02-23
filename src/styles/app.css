@@ -5,9 +5,9 @@ body {
 }
 
 h1 {
-	color: #676a6c;
-	font-size: 30px;
+	font-size: 25px;
 	margin-bottom: 0px;
+	font-weight: 100;
 }
 
 h2 {
@@ -77,6 +77,18 @@ h2 {
 
 .dropdown-toggle::after {
     display:none;
+}
+
+.breadcrumb {
+	background-color: inherit;
+	font-size: 14px;
+	margin: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.breadcrumb a {
+	color: inherit;
 }
 
 .nav-right-items .btn {
@@ -236,21 +248,24 @@ nav a:hover {
 
 /* Player */
 .search-textbox {
-	border-color: #676a6c;
+	border-color: #e7eaec;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 3px;
 	background-color: inherit;
+	color: inherit;
 }
 
 .search-textbox:focus {
 	background-color: inherit;
+	border-color: #676a6c;
+	box-shadow: none;
 }
 
 .div-search {
 	padding: 15px 0px 15px 0px;
 	z-index: 1;
-	background-color: #f3f3f4;
+	background-color: white;
 }
 
 #list-player img {
@@ -264,4 +279,12 @@ nav a:hover {
 #list-player a {
 	text-decoration: none;
 	color: inherit;
+}
+
+@media (max-width: 576px) { 
+	.div-search {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 55px;
+	}
 }

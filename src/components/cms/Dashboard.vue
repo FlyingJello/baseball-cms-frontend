@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="row" style="height: 400px;">
-      
     </div>
     <div class="row mt-3">
       <div class="col-12 col-lg-6 col-xl-4 mb-3 px-0 px-sm-3 pr-lg-0">

@@ -2,8 +2,8 @@
   <div>
     <div class="d-none d-sm-block">
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top px-0 py-0">
-        <router-link class="navbar-header" to="home">
-          <a class="navbar-brand pl-2 pl-sm-3 mx-0" href="#">Baseball mineur de La Pocatière</a>
+        <router-link class="navbar-header navbar-brand pl-2 pl-sm-3 mx-0" to="home">
+          Baseball mineur de La Pocatière
         </router-link>
         <ul class="navbar-nav ml-auto nav-right-items">
           <li class="nav-item">
@@ -58,7 +58,7 @@
           <li class="d-none d-xl-block">
             <div class="text-center py-4 d-none d-xl-block">
               <div class="py-1">
-                <img src="..\..\assets\img_avatar.jpg" alt="Avatar" style="width:85px; border-radius: 50%;">
+                <img src="..\..\assets\img_avatar2.jpg" alt="Avatar" style="width:85px; border-radius: 50%;">
               </div>
               <div class="pt-1">
                 <span style="color:white; font-size: 16px;">Jean-Philippe Lévesque</span>
