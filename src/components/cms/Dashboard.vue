@@ -5,9 +5,9 @@
     <div class="row mt-3">
       <div class="col-12 col-lg-6 col-xl-4 mb-3 px-0 px-sm-3 pr-lg-0">
         <div class="col-12 tale-section">
-          <div class="row" style="border-bottom: 1px solid #e7eaec; padding: 11px 0px 11px 0px">
-            <div class="col-9 pr-0">
-              <h2 class="py-1">Événements de la semaine</h2>
+          <div class="row py-2" style="border-bottom: 1px solid #e7eaec;">
+            <div class="col-9 pr-0 my-auto">
+              <h2>Événements de la semaine</h2>
             </div>
             <div class="col-3 px-0 tale-section-menu text-right">
                 <button class="btn px-2 py-1"><i class="fas fa-sync-alt"></i></button>
@@ -29,9 +29,9 @@
       </div>
       <div class="col-12 col-lg-6 col-xl-4 mb-3 px-0 px-sm-3 pr-xl-0">
         <div class="col-12 tale-section">
-          <div class="row" style="border-bottom: 1px solid #e7eaec; padding: 11px 0px 11px 0px">
-            <div class="col-9 pr-0">
-              <h2 class="py-1">Liste des tâches</h2>
+          <div class="row py-2" style="border-bottom: 1px solid #e7eaec;">
+            <div class="col-9 pr-0 my-auto">
+              <h2>Liste des tâches</h2>
             </div>
             <div class="col-3 px-0 tale-section-menu text-right">
                 <button class="btn px-2 py-1"><i class="fas fa-sync-alt"></i></button>
@@ -53,9 +53,9 @@
       </div>
       <div class="col-12 col-lg-6 col-xl-4 mb-3 px-0 px-sm-3 pr-lg-0 pr-xl-3">
         <div class="col-12 tale-section">
-          <div class="row" style="border-bottom: 1px solid #e7eaec; padding: 11px 0px 11px 0px">
-            <div class="col-9 pr-0">
-              <h2 class="py-1">Dernières transactions</h2>
+          <div class="row py-2" style="border-bottom: 1px solid #e7eaec;">
+            <div class="col-9 pr-0 my-auto">
+              <h2>Dernières transactions</h2>
             </div>
             <div class="col-3 px-0 tale-section-menu text-right">
                 <button class="btn px-2 py-1"><i class="fas fa-sync-alt"></i></button>

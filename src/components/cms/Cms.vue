@@ -37,7 +37,7 @@
         <router-link class="col py-3 ml-3 text-center list-group-item-xs" to="home">
             <span class="fas fa-th-large fa-lg"></span>
         </router-link>
-        <router-link class="col py-3 text-center list-group-item-xs" to="managePlayersList">
+        <router-link class="col py-3 text-center list-group-item-xs" to="managePlayers">
             <span class="fas fa-users fa-lg"></span>
         </router-link>
         <router-link class="col py-3 text-center list-group-item-xs" to="Events">
@@ -95,7 +95,7 @@
               <span class="d-none d-xl-block">Gestion des nouvelles</span>
             </div>
           </a>
-          <router-link to="managePlayersList">
+          <router-link to="managePlayers">
             <a href="#" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-start align-items-center">
                 <span class="fas fa-users fa-fw mr-3"></span>
