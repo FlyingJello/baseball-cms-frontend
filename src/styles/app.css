@@ -97,7 +97,7 @@ h2 {
 	background-color: inherit;
 	margin: 0px;
 	padding-bottom: 0px;
-	padding-left: 0px;
+	padding-left: 5px;
 	font-size: 14px;
 }
 
@@ -152,11 +152,23 @@ nav a:hover {
 	background-color: inherit;
 }
 
-.table thead th {
-	border: none;
+.table {
+	border-top: 1px solid #e7eaec;
+	background-color: white;
+	color: inherit;
 }
 
-.table tr {
+.table thead th {
+	border: none;
+	padding-top : 15px;
+	padding-bottom: 15px;
+}
+
+.table thead {
+	border-bottom: 2px solid #e7eaec;
+}
+
+.table tbody tr {
 	border-top: 1px solid #e7eaec;
 }
 
@@ -164,6 +176,15 @@ nav a:hover {
 	border: none;
 	margin-top: auto !important;
 	margin-bottom: auto !important;
+	font-size: 14px;
+}
+
+.table tr:first-child {
+	border-top: none;
+}
+
+.form-control {
+	font-size: inherit;
 }
 
 /* Medium devices (desktops, 1140px and down) */
@@ -182,7 +203,7 @@ nav a:hover {
 
 	.list-group-item {
 		padding : 1.1rem 1.25rem;
-	} 
+	}
 } 
 
 @media (max-width: 574px) {
@@ -281,24 +302,16 @@ nav a:hover {
 /* Player */
 .search-textbox {
 	border-color: #e7eaec;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 3px;
-	background-color: inherit;
 	color: inherit;
 }
 
-.search-textbox:focus {
-	background-color: inherit;
-	border-color: #676a6c;
-	box-shadow: none;
+.div-search {
+	z-index: 1;
 }
 
-.div-search {
-	padding: 15px 0px 15px 0px;
-	z-index: 1;
-	background-color: white;
-	border-top: 1px solid #e7eaec;
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
 }
 
 #list-player img {
@@ -317,7 +330,7 @@ nav a:hover {
 		border-bottom: 1px solid #e7eaec;
 	}
 
-	#list-player table tr:first-child {
-		border-top: none;
+	.table {
+		border: none;
 	}
 }
