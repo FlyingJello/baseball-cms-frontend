@@ -46,7 +46,7 @@
                     <tr class="d-flex mx-0 mx-md-4 py-1">
                         <td class="col-11 col-md-4 col-lg-3">
                             <img class="mr-4 float-left" src="..\..\assets\img_avatar.jpg" alt="Avatar"/>
-                            <span style="font-size: 14px;">Jean-Philippe Perron-Lévesque</span>
+                            <span style="font-size: 14px; font-weight: 500;">Jean-Philippe Perron-Lévesque</span>
                             <br>
                             <span class="align-top" style="font-size: 13px;">Pee-Wee</span>
                         </td>
@@ -58,7 +58,7 @@
                     <tr class="d-flex mx-0 mx-md-4 py-1">
                         <td class="col-11 col-md-4 col-lg-3">
                             <img class="mr-4 float-left" src="..\..\assets\img_avatar3.jpg" alt="Avatar"/>
-                            <span style="font-size: 14px;">Hussein Hutton</span>
+                            <span style="font-size: 14px; font-weight: 500;">Hussein Hutton</span>
                             <br>
                             <span class="align-top" style="font-size: 13px;">Bantam</span>
                         </td>
@@ -70,7 +70,7 @@
                     <tr class="d-flex mx-0 mx-md-4 py-1">
                         <td class="col-11 col-md-4 col-lg-3">
                             <img class="mr-4 float-left" src="..\..\assets\img_avatar2.jpg" alt="Avatar"/>
-                            <span style="font-size: 14px;">Ocean Pacheco</span>
+                            <span style="font-size: 14px; font-weight: 500;">Ocean Pacheco</span>
                             <br>
                             <span class="align-top" style="font-size: 13px;">Expo</span>
                         </td>
