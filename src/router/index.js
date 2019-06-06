@@ -6,6 +6,7 @@ import Cms from '@/components/cms/Cms'
 import Dashboard from '@/components/cms/Dashboard'
 import Events from '@/components/cms/Events'
 import ManagePlayers from '@/components/cms/ManagePlayers'
+import AddPlayer from '@/components/cms/AddPlayer'
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ export default new Router({
           path: 'managePlayers',
           name: 'ManagePlayers',
           component: ManagePlayers
+        },
+        {
+          path: 'addPlayer',
+          name: 'AddPlayer',
+          component: AddPlayer
         }
       ]
     },
