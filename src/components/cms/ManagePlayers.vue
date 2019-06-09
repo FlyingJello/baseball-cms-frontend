@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" style="border-bottom: 1px solid #e7eaec">
+    <div class="row bg-white" style="border-bottom: 1px solid #e7eaec">
         <div class="col-12 py-4 px-3 px-md-4">
             <h1>Gestion des joueurs</h1>
             <nav aria-label="breadcrumb">
@@ -11,7 +11,7 @@
             </nav>
         </div>
     </div>
-    <div class="row div-search py-3 px-3 px-md-4">
+    <div class="row div-search py-3 px-3 px-md-4 bg-white">
         <div class="d-none d-sm-block col-sm-6 col-md-7 col-lg-8 col-xl-4 px-0">
             <button type="button" class="btn btn-secondary py-2 mr-2"><i class="fas fa-file-import mr-2"></i>Importer</button>
             <router-link to="addPlayer">

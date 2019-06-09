@@ -1,31 +1,25 @@
 <template>
     <div>
-        <section id="login">
+        <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="form-wrap container pb-4 px-5">
-                            <div class="text-center py-4">
-                                <span style="color:#aaa;" class="fas fa-user-circle fa-7x"></span>
+                    <div class="col-12 px-0">
+                        <div class="bg-white login-wrap container pb-4 px-5 shadow-sm">
+                            <div class="py-4">
+                                <h1>Login</h1>
                             </div>
                             <div id="error" class="d-none alert alert-danger" role="alert">
                             </div>
                             <div class="form-group">
-                                <label for="user" class="sr-only">Nom d'utilisateur</label>
-                                <input id="user" type="user" v-model="username" placeholder="Nom d'utilisateur" class="form-control">
+                                <label for="user">Nom d'utilisateur</label>
+                                <input id="user" type="user" v-model="username" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="pwd" class="sr-only">Mot de passe</label>
-                                <input id="pwd" type="password" v-model="password" placeholder="Mot de passe" class="form-control">
+                                <label for="pwd">Mot de passe</label>
+                                <input id="pwd" type="password" v-model="password" class="form-control">
+                                <a href="" class="text-primary-color">Mot de passe oublié ?</a>
                             </div>
-                            <input type="submit" v-on:click="userAuthentication" class="btn btn-primary btn-lg btn-block mt-4" value="Se connecter">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="container hyperlink py-3 text-center">
-                            <a href="" class="text-primary-color">Mot de passe oublié ?</a>
+                            <input type="submit" v-on:click="userAuthentication" class="btn btn-primary btn-lg btn-block my-2" value="Se connecter">
                         </div>
                     </div>
                 </div>
