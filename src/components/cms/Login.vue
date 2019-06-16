@@ -5,11 +5,9 @@
                 <div class="row">
                     <div class="col-12 px-0">
                         <div class="bg-white login-wrap container pb-4 px-5 shadow-sm">
-                            <div class="py-4">
-                                <h1>Login</h1>
-                            </div>
-                            <div id="error" class="d-none alert alert-danger" role="alert">
-                            </div>
+                          <div class="py-4">
+                              <h1>Login</h1>
+                          </div>
                             <div class="form-group">
                                 <label for="user">Nom d'utilisateur</label>
                                 <input id="user" type="user" v-model="username" class="form-control">
@@ -48,8 +46,7 @@ export default {
           router.push('/cms/home')
         })
         .catch(function (error) {
-          document.getElementById('error').innerText = error
-          document.getElementById('error').classList.remove('d-none')
+          
         })
     }
   }

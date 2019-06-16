@@ -1,7 +1,7 @@
 /* ------------------- General css ------------------------ */
 body {
 	background-color: #f3f3f4;
-	color: #676a6c;
+	color: #5c5f61;
 	font-size: 14px;
 	height: 100%;
 }
@@ -35,7 +35,7 @@ a:hover {
 
 #sidebar-container {
 	min-height: 100vh;
-    background-color: #33363b;
+    background-color: #1f1f27;
 	padding: 53px 0px 0px 0px;
 	
 }
@@ -45,7 +45,7 @@ a:hover {
 }
 
 .navbar-dark {
-	background-color: #17a185;
+	background-color: #12806a;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -53,10 +53,9 @@ a:hover {
 	display: inline;
 	border: 0;
 	vertical-align: initial;
-	border: none;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 14px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: inherit;
 }
 
 .btn:focus {
@@ -68,7 +67,7 @@ a:hover {
 }
 
 .btn-primary {
-	background-color: #17a185;
+	background-color: #12806a;
 }
 
 .btn-primary:hover {
@@ -80,19 +79,19 @@ a:hover {
 }
 
 .btn-secondary {
-	background-color: #5b5e62;
+	background-color: #35353c;
 }
 
 .btn-secondary:hover {
-	background-color: #515458;
+	background-color: #49494f;
 }
 
 .btn-secondary:active {
-	background-color: #515458 !important;
+	background-color: #49494f !important;
 }
 
 .dark-grey-background {
-	background-color: #33363b;
+	background-color: #49494f;
 }
 
 .dropdown-menu {
@@ -104,7 +103,7 @@ a:hover {
 }
 
 .dropdown-item {
-	color: #676a6c !important;
+	color: #5c5f61 !important;
 	font-size: 14px;
 }
 
@@ -168,7 +167,7 @@ a:hover {
 }
 
 #sidebar-container a.router-link-active {
-	background-color: #282b2f !important;
+	background-color: #18181f !important;
 }
 
 .table {
@@ -209,7 +208,6 @@ a:hover {
 
 .custom-control-label {
 	cursor: pointer;
-	box-shadow: none;
 }
 
 .custom-control-label::before {
@@ -228,9 +226,19 @@ a:hover {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
-	background-color:#149077;
+	background-color:#12806a;
 	border: none;
 	box-shadow: none;
+}
+
+textarea,
+input[type]:not([type=url]):not([type=hidden]) {
+	box-shadow: none;
+}
+
+textarea,
+input[type]:not([type=url]):not([type=hidden]):focus {
+	border-color: #12806a;
 }
 
 .badge {
@@ -295,7 +303,7 @@ a:hover {
 }
 
 .tale-section-menu .btn {
-	color: #676a6c !important;
+	color: #5c5f61 !important;
 }
 
 .tale-section-menu .btn:hover {

@@ -13,17 +13,17 @@
     </div>
     <div class="row div-search py-3 px-3 px-md-4 bg-white">
         <div class="d-none d-sm-block col-sm-6 col-md-7 col-lg-8 col-xl-4 px-0">
-            <button type="button" class="btn btn-secondary py-2 mr-2"><i class="fas fa-file-import mr-2"></i>Importer</button>
+            <button type="button" class="btn btn-secondary mr-2"><i class="fas fa-file-import mr-2"></i>Importer</button>
             <router-link to="addPlayer">
-                <button type="button" class="btn btn-primary py-2"><i class="fas fa-plus-circle mr-2"></i>Ajouter un joueur</button>
+                <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle mr-2"></i>Inscrire un joueur</button>
             </router-link>
         </div>
         <div class="d-none d-xl-block col-xl-5"></div>
         <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 px-0">
             <div class="input-group">
-                <input class="form-control search-textbox py-2" type="search" placeholder="Rechercher un joueur..." id="search">
+                <input class="form-control search-textbox" type="search" placeholder="Rechercher un joueur..." id="search">
                 <span class="input-group-append">
-                    <div class="input-group-text" style="border-color: #dee2e6; background-color: #17a185; color: white;"><i class="fa fa-search"></i></div>
+                    <div class="input-group-text" style="border-color: #dee2e6; background-color: #12806a; color: white;"><i class="fa fa-search"></i></div>
                 </span>
             </div>
         </div>

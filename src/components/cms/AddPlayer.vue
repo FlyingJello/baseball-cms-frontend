@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="row bg-white" style="border-bottom: 1px solid #e7eaec">
-        <div class="col-12 py-4 px-3 px-md-4">
+        <div class="col-12 py-4 pl-3 pl-md-4 pr-0">
             <h1>Gestion des joueurs</h1>
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb pr-0">
                     <li class="breadcrumb-item"><router-link to="home">Accueil</router-link></li>
                     <li class="breadcrumb-item"><router-link to="managePlayers">Liste des joueurs</router-link></li>
-                    <li class="breadcrumb-item active" aria-current="page"><b>Ajout d'un joueur</b></li>
+                    <li class="breadcrumb-item active" aria-current="page"><b>Inscription d'un joueur</b></li>
                 </ol>
             </nav>
         </div>
@@ -21,7 +21,7 @@
         <div class="col-12 px-0 px-md-4">
             <form>
                 <div class="card mt-4">
-                    <h3 class="card-header"><i class="fas fa-user-circle fa-lg mr-2" style="color: #76787a"></i>Informations du joueur</h3>
+                    <h3 class="card-header"><i class="fas fa-user-circle fa-lg mr-2" style="color: #5c5f61"></i>Informations du joueur</h3>
                     <div class="card-body">
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="card mt-4">
-                    <h3 class="card-header"><i class="fas fa-user-circle fa-lg mr-2" style="color: #76787a"></i>Informations du parent #1</h3>
+                    <h3 class="card-header"><i class="fas fa-user-circle fa-lg mr-2" style="color: #5c5f61"></i>Informations du parent #1</h3>
                     <div class="card-body">
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="card mt-4">
-                    <h3 class="card-header"><i class="fas fa-user-circle fa-lg mr-2" style="color: #76787a"></i>Informations du parent #2</h3>
+                    <h3 class="card-header"><i class="fas fa-user-circle fa-lg mr-2" style="color: #5c5f61"></i>Informations du parent #2</h3>
                     <div class="card-body">
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -128,11 +128,11 @@
             </form>
         </div>
     </div>
-    <!--<div class="row">
-        <div class="col-12 px-3 px-md-4 pt-3">
+    <div class="row pb-3">
+        <div class="col-12 px-3 px-md-4 py-3">
             <button type="submit" class="btn btn-primary"><i class="fas fa-save mr-2"></i>Sauvegarder</button>
-            <button class="btn btn-warning"><i class="fas fa-ban mr-2"></i>Annuler</button>
+            <button type="submit" class="btn btn-secondary">Annuler</button>
         </div>
-    </div>-->
+    </div>
   </div>
 </template>

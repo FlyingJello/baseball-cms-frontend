@@ -27,7 +27,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3 py-3"><i class="far fa-question-circle"></i></a>
+            <button class="btn nav-link px-3 py-3"><i class="far fa-question-circle"></i></button>
           </li>
         </ul>
       </nav>
@@ -58,58 +58,42 @@
           <li class="d-none d-xl-block">
             <div class="text-center py-4 d-none d-xl-block">
               <div class="py-1">
-                <img src="..\..\assets\img_avatar2.jpg" alt="Avatar" style="width:85px; border-radius: 50%;">
+                <img class="rounded-circle" src="..\..\assets\img_Simon.jpg" alt="Avatar" style="width:85px;">
               </div>
               <div class="pt-1">
-                <span style="color:white; font-size: 16px;">Jean-Philippe Lévesque</span>
+                <span class="text-white" style="font-size: 16px;">Simon Lévesque</span>
               </div>
               <div>
-                <span class="align-top" style="color:#bbbbbb; font-size: 14px;">Administrateur</span>
+                <span class="align-top" style="color:#bbb;">Coordonateur</span>
               </div>
             </div>
           </li>
-
-          <router-link to="home">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-start align-items-center">
-                <span class="fas fa-th-large fa-fw mr-3"></span>
-                <span class="d-none d-xl-block">Tableau de bord</span>
-              </div>
-            </a>
+          <router-link class="list-group-item list-group-item-action flex-column align-items-start" to="home">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="fas fa-th-large fa-fw mr-3"></span>
+              <span class="d-none d-xl-block">Tableau de bord</span>
+            </div>
+          </router-link>        
+          <router-link to="events" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+              <span class="far fa-calendar-alt fa-fw mr-3"></span>
+              <span class="d-none d-xl-block">
+                Gestion des événements
+              </span>
+            </div>
           </router-link>
-
-          <router-link to="events">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-              <div class="d-flex w-100 justify-content-start align-items-center">
-                <span class="far fa-calendar-alt fa-fw mr-3"></span>
-                <span class="d-none d-xl-block">
-                  Gestion des événements
-                </span>
-              </div>
-            </a>
-          </router-link>
-
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="far fa-newspaper fa-fw mr-3"></span>
               <span class="d-none d-xl-block">Gestion des nouvelles</span>
             </div>
           </a>
-          <router-link to="managePlayers">
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-start align-items-center">
-                <span class="fas fa-users fa-fw mr-3"></span>
-                <span class="d-none d-xl-block">Gestion des joueurs</span>
-              </div>
-            </a>
-          </router-link>
-
-          <a href="#" class="list-group-item list-group-item-action">
+          <router-link to="managePlayers" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
-              <span class="fas fa-file-import fa-fw mr-3"></span>
-              <span class="d-none d-xl-block">Importations et exportations</span>
+              <span class="fas fa-users fa-fw mr-3"></span>
+              <span class="d-none d-xl-block">Gestion des joueurs</span>
             </div>
-          </a>
+          </router-link>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="far fa-chart-bar fa-fw mr-3"></span>
