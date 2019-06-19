@@ -1,5 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import '@babel/polyfill'
+import 'mutationobserver-shim'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import '@/styles/custom.scss'
 import Home from '@/components/Home'
 import Login from '@/components/cms/Login'
 import Cms from '@/components/cms/Cms'
@@ -8,6 +14,7 @@ import Events from '@/components/cms/Events'
 import ManagePlayers from '@/components/cms/ManagePlayers'
 import AddPlayer from '@/components/cms/AddPlayer'
 
+Vue.use(BootstrapVue)
 Vue.use(Router)
 
 export default new Router({

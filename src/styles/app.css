@@ -315,25 +315,6 @@ input[type]:not([type=url]):not([type=hidden]):focus {
 	background-color: #f3f3f4;
 }
 
-/* LOGIN */
-@media (min-width: 768px) { 
-	.login-wrap {
-		width : 65%;
-	}
-}
-
-@media (min-width: 992px) {
-	.login-wrap {
-		width : 45%;
-	}
-}
-
-@media (min-width: 1200px) {
-	.login-wrap {
-		width : 38%;
-	}
-}
-
 /* Player */
 .search-textbox {
 	border-color: #e7eaec;

@@ -145,7 +145,3 @@ export default {
   name: 'Cms'
 }
 </script>
-
-<style>
-@import "../../styles/app.css";
-</style>
