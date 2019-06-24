@@ -41,7 +41,7 @@
               <span class="fas fa-th-large fa-fw mr-3"></span>
               <span class="d-none d-xl-block">Tableau de bord</span>
             </div>
-          </router-link>     
+          </router-link>
           <router-link to="events" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-start align-items-center">
               <span class="far fa-calendar-alt fa-fw mr-3"></span>
@@ -111,6 +111,5 @@
 
 <script>
 export default {
-  
 }
 </script>

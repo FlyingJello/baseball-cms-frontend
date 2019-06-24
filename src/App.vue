@@ -19,7 +19,7 @@
 <script>
 export default {
   name: 'App',
-   data () {
+  data () {
     return {
       iconModal: null,
       messageTitle: '',
@@ -34,9 +34,9 @@ export default {
         { type: 'danger', icon: 'far fa-times-circle', title: 'Une erreur est survenue.' },
         { type: 'warning', icon: 'fas fa-exclamation-triangle', title: 'Attention !' },
         { type: 'primary', icon: 'far fa-check-circle', title: 'Succès !' }
-      ];
+      ]
 
-      var typeMessageObject = listTypeMessage.filter(function(element){ return element.type === messageType })[0]
+      var typeMessageObject = listTypeMessage.filter(function (element) { return element.type === messageType })[0]
 
       this.iconModal = '<i class="' + typeMessageObject.icon + ' fa-5x"></i>'
       this.headerBgVariant = messageType
@@ -45,6 +45,6 @@ export default {
       this.modalMessage = modalMessage
       this.$bvModal.show('bv-modal-message')
     }
-  },
+  }
 }
 </script>

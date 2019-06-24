@@ -133,24 +133,24 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        navigationItems: [
-          {
-            text: 'Tableau de bord',
-            to: { name: 'home' }
-          },
-          {
-            text: 'Manage',
-            href: '#'
-          },
-          {
-            text: 'Library',
-            active: true
-          }
-        ]
-      }
+export default{
+  data () {
+    return {
+      navigationItems: [
+        {
+          text: 'Tableau de bord',
+          to: { name: 'home' }
+        },
+        {
+          text: 'Manage',
+          href: '#'
+        },
+        {
+          text: 'Library',
+          active: true
+        }
+      ]
     }
   }
+}
 </script>

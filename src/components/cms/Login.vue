@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import router from '../../router'
 
 export default {
@@ -41,7 +40,7 @@ export default {
     return {
       formAuth: {
         username: '',
-        password: '',
+        password: ''
       },
       formForgotPass: {
         email: '',
@@ -76,11 +75,8 @@ export default {
       this.handleSubmitForgotPassword(bvModalForgotPass)
     },
     handleSubmitForgotPassword (bvModalForgotPass) {
-      if (!this.checkForgotPasswordFormValidity()) {
-        return
-      }
-
-      /* this.$http
+      if (this.checkForgotPasswordFormValidity()) {
+        /*  this.$http
         .post('api/users/ForgotPassord', {
           email: this.formForgotPass.email
         })
@@ -89,16 +85,17 @@ export default {
         })
         .catch((error) => {
           this.$parent.showModalMessage(error.response.data, 'danger')
-        })*/
+        })  */
+      }
     },
     resetModalForgotPassword () {
       this.formForgotPass.email = ''
       this.formForgotPass.emailState = null
     },
     validEmail: function (email) {
-      const emailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      const emailReg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return emailReg.test(email)
-    },
+    }
   }
 }
 </script>
