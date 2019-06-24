@@ -13,6 +13,7 @@ $body-color: #5c5f61;
 $font-size-base: 0.9rem;
 
 $primary: #12806a;
+$dark: #1f1f27;
 
 $h1-font-size: 30px;
 
@@ -24,17 +25,49 @@ body, html, #app, .login-background .container {
     height: 100%;
 }
 
+[role="main"] {
+    padding-top: 54px;
+}
+
 .btn {
     border: 0;
 	vertical-align: initial;
-	padding-top: 9px;
-	padding-bottom: 9px;
+	padding: 9px 15px 9px 15px;
 }
 
-/* LOGIN */
+
+/* BEGIN MANAGE MESSAGE MODAL */
+#bv-modal-message .modal-footer {
+    border: none;
+}
+/* END MANAGE MESSAGE MODAL */
+
+/* BEGIN MENU */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 54px 0 0;
+}
+
+.sidebar-sticky {
+    top: 0;
+    height: calc(100vh - 54px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar-sticky > li > a {
+    color: white;
+}
+/* END MENU */
+
+/* BEGIN LOGIN */
 @media (min-width: 768px) { 
 	.login-wrap {
-        width : 80%;
+        width : 70%;
     }
 
     .login-background {
@@ -49,14 +82,13 @@ body, html, #app, .login-background .container {
 
 @media (min-width: 992px) {
 	.login-wrap {
-		width : 43%;
+		width : 40%;
     }
 }
 
 @media (min-width: 1200px) {
 	.login-wrap {
-		width : 38%;
+		width : 35%;
     }
 }
-
 /* END LOGIN */

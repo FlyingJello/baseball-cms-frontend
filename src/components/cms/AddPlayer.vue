@@ -3,13 +3,9 @@
     <div class="row bg-white" style="border-bottom: 1px solid #e7eaec">
         <div class="col-12 py-4 pl-3 pl-md-4 pr-0">
             <h1>Gestion des joueurs</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb pr-0">
-                    <li class="breadcrumb-item"><router-link to="home">Accueil</router-link></li>
-                    <li class="breadcrumb-item"><router-link to="managePlayers">Liste des joueurs</router-link></li>
-                    <li class="breadcrumb-item active" aria-current="page"><b>Inscription d'un joueur</b></li>
-                </ol>
-            </nav>
+            <template>
+                <b-breadcrumb :items="navigationItems"></b-breadcrumb>
+            </template>
         </div>
     </div>
     <div class="row d-none">
@@ -90,7 +86,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="my-3 pt-2" style="border-bottom: 1px solid #e7eaec">
                     <h3><i class="fas fa-map-marker-alt fa-lg mr-2" style="color: #76787a"></i>Adresse</h3>
                 </div>
@@ -136,3 +131,26 @@
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        navigationItems: [
+          {
+            text: 'Tableau de bord',
+            to: { name: 'home' }
+          },
+          {
+            text: 'Manage',
+            href: '#'
+          },
+          {
+            text: 'Library',
+            active: true
+          }
+        ]
+      }
+    }
+  }
+</script>
