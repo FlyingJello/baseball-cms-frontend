@@ -3,7 +3,9 @@
     <router-view/>
     <b-modal id="bv-modal-message" no-close-on-backdrop=true :header-bg-variant="headerBgVariant">
       <template slot="modal-header">
-          <div class="text-white mx-auto py-4" v-html="iconModal"></div>
+          <div class="text-white mx-auto py-4">
+            <i v-bind:class="iconModalClass"></i>
+          </div>
       </template>
       <template slot="default">
         <h3 class="text-center">{{messageTitle}}</h3>
@@ -21,7 +23,7 @@ export default {
   name: 'App',
   data () {
     return {
-      iconModal: null,
+      iconModalClass: '',
       messageTitle: '',
       modalMessage: '',
       headerBgVariant: '',
@@ -33,12 +35,13 @@ export default {
       const listTypeMessage = [
         { type: 'danger', icon: 'far fa-times-circle', title: 'Une erreur est survenue.' },
         { type: 'warning', icon: 'fas fa-exclamation-triangle', title: 'Attention !' },
-        { type: 'primary', icon: 'far fa-check-circle', title: 'Succès !' }
+        { type: 'primary', icon: 'far fa-check-circle', title: 'Succès !' },
+        { type: 'info', icon: 'far fa-question-circle', title: 'Information' }
       ]
 
       var typeMessageObject = listTypeMessage.filter(function (element) { return element.type === messageType })[0]
 
-      this.iconModal = '<i class="' + typeMessageObject.icon + ' fa-5x"></i>'
+      this.iconModalClass = typeMessageObject.icon + ' fa-5x'
       this.headerBgVariant = messageType
       this.buttonBgVariant = messageType
       this.messageTitle = typeMessageObject.title

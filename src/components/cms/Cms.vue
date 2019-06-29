@@ -18,7 +18,7 @@
     </b-navbar>
     <div class="container-fluid">
       <div class="row">
-        <b-nav class="col-md-2 d-none d-md-block bg-dark sidebar" sticky="true">
+        <b-nav class="d-none d-md-block col-md-2 bg-dark sidebar" sticky="true">
           <div class="text-center py-4 d-none d-xl-block">
             <img class="rounded-circle" src="..\..\assets\img_Simon.jpg" alt="Avatar" style="width:85px;">
             <div class="pt-1">
@@ -101,7 +101,7 @@
           </a>
         </ul>
       </nav>-->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <main role="main" class="col-md-10 col-lg-10 ml-sm-auto px-4">
             <router-view/>
         </main>
       </div>
@@ -111,5 +111,13 @@
 
 <script>
 export default {
+  /* mounted:function(){
+    this.method1() //method1 will execute at pageload
+  },
+  methods:{
+    method1:function(){
+      alert('test')
+    }
+ } */
 }
 </script>

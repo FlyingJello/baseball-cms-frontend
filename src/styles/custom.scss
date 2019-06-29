@@ -13,7 +13,7 @@ $body-color: #5c5f61;
 $font-size-base: 0.9rem;
 
 $primary: #12806a;
-$dark: #1f1f27;
+$dark: #1b1b23;
 
 $h1-font-size: 30px;
 
@@ -29,12 +29,33 @@ body, html, #app, .login-background .container {
     padding-top: 54px;
 }
 
+@media (min-width: 574px) and (max-width: 1199px) {
+	.sidebar {
+		width: 60px !important;
+	}
+	
+	[role="main"] {
+		width: calc(100% - 60px);
+	}
+} 
+
 .btn {
     border: 0;
 	vertical-align: initial;
 	padding: 9px 15px 9px 15px;
 }
 
+.breadcrumb {
+	background-color: inherit;
+	margin: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+.breadcrumb a {
+	color: inherit;
+}
 
 /* BEGIN MANAGE MESSAGE MODAL */
 #bv-modal-message .modal-footer {
@@ -72,7 +93,7 @@ body, html, #app, .login-background .container {
 
     .login-background {
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/Baseball-Login.jpg') no-repeat center center fixed;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/Baseball-Login.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
