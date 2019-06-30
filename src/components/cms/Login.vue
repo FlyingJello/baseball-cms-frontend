@@ -6,19 +6,22 @@
           <div class="login-wrap bg-white mx-auto px-5 py-4">
             <h1 class="font-weight-light text-center pt-2 mb-0">Connexion</h1>
             <hr/>
-            <b-alert :variant="formAuth.alertVariant" dismissible fade :show="formAuth.showDismissibleAlert" @dismissed="formAuth.showDismissibleAlert=false">
+            <b-alert :variant="formAuth.alertVariant" dismissible :show="formAuth.showDismissibleAlert" @dismissed="formAuth.showDismissibleAlert=false">
               {{formAuth.alertMessage}}
             </b-alert>
             <b-form @submit="userAuthentication">
               <b-form-group id="user-group" label="Nom d'utilisateur" label-for="user" :state="formAuth.usernameState" :invalid-feedback="formAuth.usernameErrorMessage">
-                <b-form-input id="user" type="text" v-model="formAuth.username" :state="formAuth.usernameState" @input="resetValidationUsername()"/>
+                <b-form-input id="user" type="text" v-model="formAuth.username" :state="formAuth.usernameState" @input="resetValidationUsername()" :disabled="formAuth.userAuthInProgress"/>
               </b-form-group>
               <b-form-group id="pwd-group" class="mb-0" label="Mot de passe" label-for="pwd" :state="formAuth.passwordState" :invalid-feedback="formAuth.passwordErrorMessage">
-                <b-form-input id="pwd" type="password" v-model="formAuth.password" :state="formAuth.passwordState" @input="resetValidationPassword()"/>
+                <b-form-input id="pwd" type="password" v-model="formAuth.password" :state="formAuth.passwordState" @input="resetValidationPassword()" :disabled="formAuth.userAuthInProgress"/>
               </b-form-group>
               <b-link v-b-modal.modal-forgot-password class="text-primary-color">Mot de passe oublié ?</b-link>
               <div class="text-right mt-3">
-                <b-button type="submit" squared variant="primary">Se connecter</b-button>
+                <b-button type="submit" squared variant="primary" :disabled="formAuth.userAuthInProgress">
+                  <b-spinner v-show="formAuth.userAuthInProgress" small type="grow"/>
+                  {{formAuth.buttonUserAuthName}}
+                </b-button>
               </div>
             </b-form>
           </div>
@@ -26,7 +29,7 @@
       </div>
     </div>
     <b-modal id="modal-forgot-password" title="Mot de passe oublié ?" @ok="userForgotPassword" ok-title="Envoyer" cancel-title="Annuler" @show="resetModalForgotPassword">
-      <b-alert class="my-0" :variant="formForgotPass.alertVariant" fade :show="formForgotPass.showDismissibleAlert" @dismissed="formForgotPass.showDismissibleAlert=false">
+      <b-alert class="my-0" :variant="formForgotPass.alertVariant" :show="formForgotPass.showDismissibleAlert" @dismissed="formForgotPass.showDismissibleAlert=false">
         {{formForgotPass.alertMessage}}
       </b-alert>
       <b-form @submit.stop.prevent="handleSubmitForgotPassword">
@@ -53,7 +56,9 @@ export default {
         usernameErrorMessage: '',
         password: '',
         passwordState: null,
-        passwordErrorMessage: ''
+        passwordErrorMessage: '',
+        userAuthInProgress: false,
+        buttonUserAuthName: 'Se connecter'
       },
       formForgotPass: {
         showDismissibleAlert: false,
@@ -83,8 +88,11 @@ export default {
       return validUsername && validPassword
     },
     userAuthentication (evt) {
+      this.resetValidationLogin()
+      this.formAuth.userAuthInProgress = true
+      this.formAuth.buttonUserAuthName = 'Connexion en cours...'
       evt.preventDefault()
-      this.handleSubmitUserAuthentication()
+      setTimeout( () => this.handleSubmitUserAuthentication(), 5000)
     },
     handleSubmitUserAuthentication () {
       if (this.checkUserAuthenticationFormValidity()) {
@@ -99,6 +107,8 @@ export default {
           .catch((error) => {
             this.showAlertMessage(this.formAuth, 'danger', error.response.data)
             this.formAuth.password = ''
+            this.formAuth.userAuthInProgress = false
+            this.formAuth.buttonUserAuthName = "Se connecter"
           })
       }
     },
@@ -107,6 +117,11 @@ export default {
     },
     resetValidationPassword () {
       this.formAuth.passwordState = null
+    },
+    resetValidationLogin () {
+      this.formAuth.usernameState = null,
+      this.formAuth.passwordState = null,
+      this.formAuth.showDismissibleAlert = false
     },
     checkForgotPasswordFormValidity () {
       const valid = this.formForgotPass.email !== '' && this.validEmail(this.formForgotPass.email)
