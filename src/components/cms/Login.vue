@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <b-modal id="modal-forgot-password" title="Mot de passe oublié ?" @ok="userForgotPassword" ok-title="Envoyer" cancel-title="Annuler" @show="resetModalForgotPassword">
+    <b-modal id="modal-forgot-password" title="Mot de passe oublié ?" @ok="userForgotPassword" ok-title="Envoyer" cancel-title="Annuler">
       <b-alert class="my-0" :variant="formForgotPass.alertVariant" :show="formForgotPass.showDismissibleAlert" @dismissed="formForgotPass.showDismissibleAlert=false">
         {{formForgotPass.alertMessage}}
       </b-alert>
@@ -92,7 +92,7 @@ export default {
       this.formAuth.userAuthInProgress = true
       this.formAuth.buttonUserAuthName = 'Connexion en cours...'
       evt.preventDefault()
-      setTimeout( () => this.handleSubmitUserAuthentication(), 5000)
+      setTimeout( () => this.handleSubmitUserAuthentication(), 2000)
     },
     handleSubmitUserAuthentication () {
       if (this.checkUserAuthenticationFormValidity()) {
@@ -110,6 +110,10 @@ export default {
             this.formAuth.userAuthInProgress = false
             this.formAuth.buttonUserAuthName = "Se connecter"
           })
+      }
+      else {
+        this.formAuth.userAuthInProgress = false
+        this.formAuth.buttonUserAuthName = "Se connecter"
       }
     },
     resetValidationUsername () {
@@ -131,7 +135,7 @@ export default {
     },
     userForgotPassword (bvModalForgotPass) {
       bvModalForgotPass.preventDefault()
-      this.handleSubmitForgotPassword()
+      this.handleSubmitForgotPassword(bvModalForgotPass)
     },
     handleSubmitForgotPassword () {
       if (this.checkForgotPasswordFormValidity()) {
@@ -147,6 +151,8 @@ export default {
           this.$parent.showModalMessage(error.response.data, 'danger')
           this.showAlertMessage(this.formForgotPass, 'primary', error.response.data)
         })  */
+        this.resetModalForgotPassword()
+        this.$parent.showModalMessage("Un courriel vous a été envoyé à l'adresse courriel suivante : " + this.formForgotPass.email, 'primary')
       }
     },
     resetModalForgotPassword () {
