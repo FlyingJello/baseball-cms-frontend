@@ -36,7 +36,7 @@ export default {
         { type: 'danger', icon: 'far fa-times-circle', title: 'Une erreur est survenue.' },
         { type: 'warning', icon: 'fas fa-exclamation-triangle', title: 'Attention !' },
         { type: 'primary', icon: 'far fa-check-circle', title: 'Succès !' },
-        { type: 'info', icon: 'far fa-question-circle', title: 'Information' }
+        { type: 'info', icon: 'fas fa-info-circle', title: 'Information' }
       ]
 
       var typeMessageObject = listTypeMessage.filter(function (element) { return element.type === messageType })[0]

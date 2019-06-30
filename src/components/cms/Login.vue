@@ -16,7 +16,7 @@
               <b-form-group id="pwd-group" class="mb-0" label="Mot de passe" label-for="pwd" :state="formAuth.passwordState" :invalid-feedback="formAuth.passwordErrorMessage">
                 <b-form-input id="pwd" type="password" v-model="formAuth.password" :state="formAuth.passwordState" @input="resetValidationPassword()" :disabled="formAuth.userAuthInProgress"/>
               </b-form-group>
-              <b-link v-b-modal.modal-forgot-password class="text-primary-color">Mot de passe oublié ?</b-link>
+              <b-link class="text-primary-color" @click="formForgotPass.modalForgotPassword = !formForgotPass.modalForgotPassword" :disabled="formAuth.userAuthInProgress">Mot de passe oublié ?</b-link>
               <div class="text-right mt-3">
                 <b-button type="submit" squared variant="primary" :disabled="formAuth.userAuthInProgress">
                   <b-spinner v-show="formAuth.userAuthInProgress" small type="grow"/>
@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <b-modal id="modal-forgot-password" title="Mot de passe oublié ?" @ok="userForgotPassword" ok-title="Envoyer" cancel-title="Annuler">
+    <b-modal v-model="formForgotPass.modalForgotPassword" title="Mot de passe oublié ?" @ok="userForgotPassword" ok-title="Envoyer" cancel-title="Annuler">
       <b-alert class="my-0" :variant="formForgotPass.alertVariant" :show="formForgotPass.showDismissibleAlert" @dismissed="formForgotPass.showDismissibleAlert=false">
         {{formForgotPass.alertMessage}}
       </b-alert>
@@ -61,6 +61,7 @@ export default {
         buttonUserAuthName: 'Se connecter'
       },
       formForgotPass: {
+        modalForgotPassword: false,
         showDismissibleAlert: false,
         alertVariant: '',
         alertMessage: '',
@@ -151,8 +152,9 @@ export default {
           this.$parent.showModalMessage(error.response.data, 'danger')
           this.showAlertMessage(this.formForgotPass, 'primary', error.response.data)
         })  */
+        this.formForgotPass.modalForgotPassword = false
+        this.$parent.showModalMessage("Un courriel vous a été envoyé à l'adresse courriel suivante : " + this.formForgotPass.email, 'info')
         this.resetModalForgotPassword()
-        this.$parent.showModalMessage("Un courriel vous a été envoyé à l'adresse courriel suivante : " + this.formForgotPass.email, 'primary')
       }
     },
     resetModalForgotPassword () {
